@@ -1,0 +1,23 @@
+body {
+  font-size: var(--fontSize) !important;
+}
+
+#Reverso_extension__subtitle-container {
+  color: rgba(var(--subtitlesColourRed), var(--subtitlesColourGreen), var(--subtitlesColourBlue), 100%) !important;
+	font-size: var(--subtitlesFontSize) !important;
+	bottom: var(--subtitlesFromBottom, 10%) !important;
+	// top: var(--subtitlesFromTop) !important;
+
+  &:hover {
+    background-color: rgba(var(--subtitlesBackgroundColourRed), var(--subtitlesBackgroundColourGreen), var(--subtitlesBackgroundColourBlue), var(--subtitlesBackgroundTransparency, 50%)) !important;
+
+    #Reverso_extension__subtitle-inner { 
+      background-color: rgba(0,0,0,0) !important;
+    }
+  }
+
+  #Reverso_extension__subtitle-inner {
+    background-color: rgba(var(--subtitlesBackgroundColourRed), var(--subtitlesBackgroundColourGreen), var(--subtitlesBackgroundColourBlue), var(--subtitlesBackgroundTransparency, 50%)) !important;
+    color: rgba(var(--subtitlesColourRed), var(--subtitlesColourGreen), var(--subtitlesColourBlue), 100%) !important;
+  }
+}

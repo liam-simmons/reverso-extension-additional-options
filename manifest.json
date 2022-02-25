@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Reverso Extension Customisation",
+  "version": "1.0",
+
+  "description": "Customise the style of the subtitles when using the Reverso Context browser extension",
+
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "css": ["build/index.css"],
+      "js": ["build/index.js"]
+    }
+  ],
+
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": {
+      "48": "/icon.svg"
+    },
+    "default_title": "Firefox Test",
+    "default_popup": "/popup.html"
+  },
+
+  "permissions": [
+    "storage"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "reverso-styles-extension",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run build -- --watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.43",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.1.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+  }
+}
